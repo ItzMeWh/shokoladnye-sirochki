@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>airdropchik.games // Y2K ZONE</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    body {
+      background-color: #0d0d0d;
+      color: #00ff66;
+      font-family: 'Press Start 2P', monospace, sans-serif;
+      margin: 0;
+      padding: 20px;
+      overflow-x: hidden;
+      background-image: radial-gradient(#1a1a1a 15%, transparent 16%);
+      background-size: 16px 16px;
+    }
+
+    /* Эффект ЭЛТ-монитора (Scanlines) */
+    body::before {
+      content: " ";
+      display: block;
+      position: fixed;
+      top: 0; left: 0; bottom: 0; right: 0;
+      background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+      background-size: 100% 4px;
+      z-index: 999;
+      pointer-events: none;
+    }
+
+    .crt-container {
+      max-width: 800px;
+      margin: 0 auto;
+      border: 4px solid #ff007f;
+      box-shadow: 0 0 20px #ff007f, inset 0 0 15px #ff007f;
+      background: rgba(10, 10, 10, 0.9);
+      padding: 20px;
+    }
+
+    .window-header {
+      background: linear-gradient(90deg, #ff007f, #9900ff);
+      color: #fff;
+      padding: 8px;
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    h1 {
+      color: #fff;
+      text-shadow: 3px 3px #ff007f, -3px -3px #00f0ff;
+      font-size: 24px;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .glow-text {
+      color: #00ff66;
+      text-shadow: 0 0 8px #00ff66;
+      text-align: center;
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    .badge-box {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 25px 0;
+      flex-wrap: wrap;
+    }
+
+    .btn-y2k {
+      background: #00f0ff;
+      color: #000;
+      border: 3px solid #fff;
+      padding: 12px 20px;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 5px 5px 0px #ff007f;
+      transition: all 0.1s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-y2k:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 7px 7px 0px #00ff66;
+      background: #ff007f;
+      color: #fff;
+    }
+
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 10px;
+      color: #ff007f;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="crt-container">
+    <div class="window-header">
+      <span>SYSTEM_ERROR // AIRDROPCHIK.GAMES</span>
+      <span>[X]</span>
+    </div>
+
+    <h1>ЭТО НАЗЫВАЕТСЯ ЛЮБОВЬ &lt;3</h1>
+
+    <p class="glow-text">
+      WELCOME TO THE WEIRDCORE / Y2K ZONE<br>
+      [ system initialized successfully ]
+    </p>
+
+    <div class="badge-box">
+      <a href="#" class="btn-y2k">PROJECTS</a>
+      <a href="#" class="btn-y2k">MUSIC / TRACKS</a>
+      <a href="#" class="btn-y2k">ENTER THE VOID</a>
+    </div>
+
+    <footer>
+      &copy; 2026 AIRDROPCHIK // ALL RIGHTS RESERVED
+    </footer>
+  </div>
+
+</body>
+</html>
